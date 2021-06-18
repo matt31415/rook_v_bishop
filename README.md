@@ -4,6 +4,32 @@
 
 This is some sample code being generated for a job interview
 
+## Usage
+
+The following dependencies are required
+
+- Ruby 2.3.7
+- Bundler 2.2.0
+
+After cloning the repo install dependencies:
+
+`bundle install`
+
+To run the app:
+
+`bin/rook_v_bishop.rb`
+
+To run tests:
+
+`bundle exec rspec`
+
+To run linting:
+
+`bundle exec rubocop`
+
+### running
+
+
 ## Problem Statement
 
 We are looking at a 'special' game of chess where each player only has one piece.
