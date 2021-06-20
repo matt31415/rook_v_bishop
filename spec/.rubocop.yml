@@ -1,0 +1,5 @@
+inherit_from: ../.rubocop.yml
+
+# Turn off block length limits in tests
+Metrics/BlockLength:
+  Enabled: false
