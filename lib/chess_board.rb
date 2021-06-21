@@ -1,4 +1,4 @@
-class Board
+class ChessBoard
   BOARD_WIDTH = 8
   EMPTY_CELL = ' '.freeze
 

@@ -1,8 +1,8 @@
-require 'board'
+require 'chess_board'
 require 'rook'
 require 'bishop'
 
-RSpec.describe Board do
+RSpec.describe ChessBoard do
   describe 'to_s' do
     it 'prints an empty board' do
       empty_board = <<~BOARD
@@ -24,7 +24,7 @@ RSpec.describe Board do
         |   |   |   |   |   |   |   |   |
         ---------------------------------
       BOARD
-      expect(Board.new.to_s).to eq(empty_board)
+      expect(ChessBoard.new.to_s).to eq(empty_board)
     end
 
     it 'prints a board with pieces in place' do
@@ -47,7 +47,7 @@ RSpec.describe Board do
         |   |   |   |   |   |   |   |   |
         ---------------------------------
       BOARD
-      board = Board.new(
+      board = ChessBoard.new(
         Rook.new('c5'),
         Bishop.new('a8')
       )
