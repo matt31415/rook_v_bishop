@@ -12,6 +12,10 @@ class Rook < Piece
     }
   end
 
+  def can_move_to?(destination)
+    (destination[0] == position[0]) ^ (destination[1] == position[1])
+  end
+
   private
 
   def move_direction
