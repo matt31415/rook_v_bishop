@@ -14,7 +14,7 @@ class ChessBoard
 
   def to_s
     board_str = horizontal_edge + "\n"
-    [8, 7, 6, 5, 4, 3, 2, 1].each do |row|
+    (1..8).reverse_each do |row|
       %w[a b c d e f g h].each do |col|
         board_str += "| #{piece_at(col, row)&.to_s || EMPTY_CELL} "
       end

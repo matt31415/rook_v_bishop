@@ -13,6 +13,14 @@ class Piece
     @position = pos
   end
 
+  def row
+    @position[1]
+  end
+
+  def col
+    @position[0]
+  end
+
   private
 
   def validate_position(pos)
