@@ -24,6 +24,6 @@ class Piece
   private
 
   def validate_position(pos)
-    raise 'Invalid position' unless pos =~ /^[a-f][1-8]$/
+    raise 'Invalid position' unless pos =~ /^[a-h][1-8]$/
   end
 end
