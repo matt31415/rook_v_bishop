@@ -14,7 +14,7 @@ RSpec.describe Piece do
     end
 
     it "doesn't allow invalid columns" do
-      expect { piece.position = 'h1' }.to raise_error('Invalid position')
+      expect { piece.position = 'k1' }.to raise_error('Invalid position')
     end
 
     it 'converts uppercase positions to lowercase' do

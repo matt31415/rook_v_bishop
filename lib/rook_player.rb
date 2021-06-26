@@ -8,15 +8,16 @@ class RookPlayer
               when :right then horizontal_move(piece, distance)
               end
 
-    puts "Moving Rook from #{piece.position} to #{new_pos}\n"\
-      "Direction: #{direction}, Distance: #{distance}"
+    puts "Direction: #{direction}, Distance: #{distance}"
+    puts "Moving Rook from #{piece.position} to #{new_pos}"
+
     piece.position = new_pos
   end
 
   private
 
   def move_direction
-    rand(2) ? :up : :right
+    rand(2).positive? ? :up : :right
   end
 
   def move_distance
